@@ -60,7 +60,7 @@ export default function Navbar() {
 
             {/* underline glow */}
             <span
-              className="absolute left-0 -bottom-1 h-[2px] w-full transition-all duration-300"
+              className="absolute left-0 -bottom-1 h-0.5 w-full transition-all duration-300"
               style={{
                 background:
                   "linear-gradient(90deg, var(--color-plasma), var(--color-stellar))",
