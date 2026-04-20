@@ -138,6 +138,8 @@ Our vision is to reshape the future of digital labor by:
 Blockchain    →  Stellar (Soroban Smart Contracts)
 Language      →  Rust
 SDK           →  Soroban SDK + Stellar SDK (JavaScript)
+Frontend      →  Next.js + Tailwind CSS
+Backend       →  Node.js (Express) — indexing layer
 Storage       →  IPFS (decentralized metadata & submissions)
 ```
 
