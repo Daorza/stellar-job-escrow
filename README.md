@@ -86,7 +86,7 @@ Our vision is to reshape the future of digital labor by:
 | **Explorer** | [View on Stellar Expert](https://stellar.expert/explorer/testnet/tx/6e46e35231e51854d94149ded22a5183c83d1893978e4cb027674b1ac3064145) |
 
 ### 🖼️ Testnet Screenshot
-> ![Testnet Screenshot](src/Stellar-expert.png)
+> ![Contract Deployment Screenshot](Stellar-expert.png)
 
 ---
 
