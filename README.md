@@ -82,11 +82,11 @@ Our vision is to reshape the future of digital labor by:
 | Field | Value |
 |-------|-------|
 | **Contract Address** | `CBQUGYNIE7FLW74SFVXRWGR6L6PY2AFLWWEH3RXCJYNON34ORAJPYE5L` |
-| **Network** | Stellar Testnet |
-| **Explorer** | [View on Stellar Expert](https://stellar.expert/explorer/testnet) |
+| **Network** | Stellar Testnet (https://lab.stellar.org/r/testnet/contract/CBQUGYNIE7FLW74SFVXRWGR6L6PY2AFLWWEH3RXCJYNON34ORAJPYE5L) |
+| **Explorer** | [View on Stellar Expert](https://stellar.expert/explorer/testnet/tx/6e46e35231e51854d94149ded22a5183c83d1893978e4cb027674b1ac3064145) |
 
 ### 🖼️ Testnet Screenshot
-> *(Insert your testnet interaction screenshot here — e.g., contract deployment, transaction, or UI interaction)*
+> ![Testnet Screenshot](src/Stellar-expert.png)
 
 ---
 
