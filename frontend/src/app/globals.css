@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --color-void: #050508;
+  --color-surface: #0d0d14;
+  --color-panel: #12121c;
+  --color-border: #1e1e2e;
+  --color-border-bright: #2a2a3f;
+
+  --color-plasma: #7c3aed;
+  --color-plasma-bright: #8b5cf6;
+  --color-plasma-glow: #a78bfa;
+  --color-plasma-dim: #4c1d95;
+
+  --color-stellar: #06b6d4;
+  --color-stellar-bright: #22d3ee;
+  --color-stellar-dim: #0e7490;
+
+  --color-nova: #f59e0b;
+  --color-nova-dim: #92400e;
+
+  --color-success: #10b981;
+  --color-danger: #ef4444;
+  --color-muted: #4b4b6b;
+  --color-text-dim: #6b6b8f;
+  --color-text-base: #c4c4e0;
+  --color-text-bright: #e8e8f5;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-body: "DM Sans", sans-serif;
+
+  --radius-card: 16px;
+  --radius-btn: 10px;
+}
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html {
+    background: var(--color-void);
+    color: var(--color-text-base);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: var(--color-plasma-dim);
+    color: var(--color-plasma-glow);
+  }
+
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--color-surface); }
+  ::-webkit-scrollbar-thumb { background: var(--color-border-bright); border-radius: 99px; }
+}
+
+@layer utilities {
+  .glow-plasma {
+    box-shadow: 0 0 20px -4px color-mix(in oklch, var(--color-plasma) 40%, transparent),
+                0 0 60px -12px color-mix(in oklch, var(--color-plasma) 20%, transparent);
+  }
+  .glow-stellar {
+    box-shadow: 0 0 20px -4px color-mix(in oklch, var(--color-stellar) 40%, transparent),
+                0 0 60px -12px color-mix(in oklch, var(--color-stellar) 20%, transparent);
+  }
+  .grid-noise {
+    background-image:
+      linear-gradient(var(--color-border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--color-border) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  .text-gradient-plasma {
+    background: linear-gradient(135deg, var(--color-plasma-glow), var(--color-stellar-bright));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .panel {
+    background: var(--color-panel);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+  }
+}
